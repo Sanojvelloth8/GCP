@@ -1,4 +1,4 @@
-#Resource to create dynamodb table 
+#Resource to create dynamodb table updated
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
   name           = "Employee"
   billing_mode   = "PROVISIONED"
