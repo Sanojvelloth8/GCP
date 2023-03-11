@@ -7,6 +7,12 @@ provider "google" {
 
 
 
+variable "gcp-creds" {
+default= ""
+}
+
+
+
 resource "google_compute_instance" "default" {
   name         = "test"
   machine_type = "e2-medium"
