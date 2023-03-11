@@ -7,9 +7,7 @@ provider "google" {
 
 
 
-variable "gcp-creds" {
-default= ""
-}
+
 
 
 
