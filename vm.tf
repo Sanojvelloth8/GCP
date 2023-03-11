@@ -1,6 +1,8 @@
-resource "google_service_account" "default" {
-  account_id   = "service_account_id"
-  display_name = "Service Account"
+provider "google" {
+  project     = "<YOUR PROJECT>"
+  region  = "us-central1"
+  zone    = "us-central1-a"
+  credentials = var.gcp-creds
 }
 
 resource "google_compute_instance" "default" {
@@ -44,3 +46,4 @@ resource "google_compute_instance" "default" {
     scopes = ["cloud-platform"]
   }
 }
+
