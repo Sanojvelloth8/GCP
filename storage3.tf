@@ -5,7 +5,7 @@ provider "google" {
   
 }
 
-resource "google_storage_bucket" "auto-expire" {
+resource "google_storage_bucket" "auto-expire2" {
   name          = "rehnasanoj88899"
   location      = "US"
   force_destroy = true
