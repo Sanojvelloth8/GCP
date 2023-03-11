@@ -2,12 +2,13 @@ provider "google" {
   project     = "infrastructure-testing-project"
   region  = "us-central1"
   zone    = "us-central1-a"
-  credentials = var.gcp-creds
+  
 }
 
-
-variable "gcp-creds" {
-default= ""
+variable "gcp_credentials" {
+  type = string
+  sensitive = true
+  description = "Google Cloud service account credentials"
 }
 
 resource "google_compute_instance" "default" {
