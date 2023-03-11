@@ -5,11 +5,7 @@ provider "google" {
   
 }
 
-variable "gcp_credentials" {
-  type = string
-  sensitive = true
-  description = "Google Cloud service account credentials"
-}
+
 
 resource "google_compute_instance" "default" {
   name         = "test"
