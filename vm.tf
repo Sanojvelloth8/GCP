@@ -1,8 +1,13 @@
 provider "google" {
-  project     = "<YOUR PROJECT>"
+  project     = "infrastructure-testing-project"
   region  = "us-central1"
   zone    = "us-central1-a"
   credentials = var.gcp-creds
+}
+
+
+variable "gcp-creds" {
+default= ""
 }
 
 resource "google_compute_instance" "default" {
